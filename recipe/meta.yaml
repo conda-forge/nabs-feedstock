@@ -12,7 +12,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -22,7 +22,7 @@ requirements:
     - pip
   run:
     - python >=3.9
-    - bluesky <1.11,>=1.6.5
+    - bluesky-base <1.11,>=1.6.5
     - numpy
     - ophyd
     - pandas
@@ -45,4 +45,3 @@ about:
 extra:
   recipe-maintainers:
     - conda-forge/pcdsdevices
-    - conda-forge/pdcsdevices
