@@ -44,4 +44,4 @@ about:
 
 extra:
   recipe-maintainers:
-    - conda-forge/pdcsdevices
+    - conda-forge/pcdsdevices
