@@ -22,7 +22,7 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - bluesky-base <1.11,>=1.6.5
+    - bluesky-base >=1.6.5
     - numpy
     - ophyd
     - pandas
