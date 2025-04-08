@@ -1,5 +1,5 @@
 {% set name = "nabs" %}
-{% set version = "1.5.5" %}
+{% set version = "1.5.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://github.com/pcdshub/nabs/archive/v{{ version }}.tar.gz
-  sha256: 86e4ac26349196119e9b359c6dc7bfc40a86fd452f41de7d5c888af249ae0176
+  sha256: 0503a33c27d81854eeb267d1af86a99e2784ae9931a1a35cc848b9889e4a5d9d
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 2
+  number: 0
 
 requirements:
   host:
@@ -22,7 +22,7 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - bluesky-base <1.11,>=1.6.5
+    - bluesky-base >=1.6.5
     - numpy
     - ophyd
     - pandas
