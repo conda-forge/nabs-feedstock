@@ -1,5 +1,5 @@
 {% set name = "nabs" %}
-{% set version = "1.5.6" %}
+{% set version = "1.5.7" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/pcdshub/nabs/archive/v{{ version }}.tar.gz
-  sha256: 0503a33c27d81854eeb267d1af86a99e2784ae9931a1a35cc848b9889e4a5d9d
+  sha256: e7e86c55c964cfceccd7126759ff39b64e7b3a4572dfaaad32a3cbbebfcaf439
 
 build:
   noarch: python
